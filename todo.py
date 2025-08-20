@@ -1,10 +1,26 @@
+#------------------
+# To-Do-List-code
+#------------------
+
+# this is just a code based app without any complications.
+
+# there are no extra things used except python.
+
+# It can run in any python console, we just need to copy and paste it anywhere you want.
+
+
+# this code can also set a PIN.
+# So that it can lock the tasks and visible only when it gets the correct PIN.
+
 tasks = []
-pin_enabled = False
+pin_enabled = False #this is because the lock should be off until it gets the PIN manually.
 pin = None
 
 def check_pin():
     entered = input("Enter PIN: ")
     return entered == pin
+
+# Used funtions here, so that, It can be used anywhere.
 
 while True:
     print("\n To-Do-List App")
@@ -15,7 +31,7 @@ while True:
     for n, option in enumerate(options, start=1):
         print(f"{n}.{option}")
 
-
+# Used enumerate to number the options automatically without any struggles in further updates.
 
 
     choose = input("Choose an option: ")
@@ -37,7 +53,7 @@ while True:
             for i, task in enumerate(tasks, start=1):
                 print(f"{i}.{task}")   
 
-
+# that function is used here
 
 
     elif choose == '3':
@@ -51,7 +67,7 @@ while True:
                 pin = None
                 print("Your Tasks are visibel without PIN...") 
         
-        
+    # that function is also used here
 
 
 
@@ -72,5 +88,6 @@ while True:
 
     else:
         print("Invalid option...Please Try again...")
+
 
 
