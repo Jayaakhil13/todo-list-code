@@ -65,7 +65,7 @@ while True:
             if check_pin():
                 pin_enabled = False
                 pin = None
-                print("Your Tasks are visibel without PIN...") 
+                print("Your Tasks are visible without PIN...") 
         
     # that function is also used here
 
@@ -88,6 +88,7 @@ while True:
 
     else:
         print("Invalid option...Please Try again...")
+
 
 
 
